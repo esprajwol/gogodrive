@@ -11,7 +11,7 @@ import (
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/drive/v3"
-	option "google.golang.org/api/option"
+	"google.golang.org/api/option"
 )
 
 /* // Retrieve a token, saves the token, then returns the generated client.
