@@ -1,0 +1,125 @@
+# This is a configuration file to customize code analysis by Sider.
+#
+# For more information, see the documentation:
+# https://help.sider.review/getting-started/custom-configuration
+
+# Customize each tool. If analyses fail, try adjusting each option referencing the following example.
+linter:
+
+#   # CoffeeLint example. See https://help.sider.review/tools/javascript/coffeelint
+#   coffeelint:
+#     root_dir: project/
+#     dependencies:
+#       - my-coffeelint-plugin@2
+#     npm_install: false
+#     file: config/coffeelint.json
+
+#   # GolangCI-Lint example. See https://help.sider.review/tools/go/golangci-lint
+#   golangci_lint:
+#     root_dir: project/
+#     target: "src/..."
+#     config: config/.golangci.yml
+#     disable:
+#       - govet
+#       - unused
+#     disable-all: true
+#     enable:
+#       - golint
+#       - gosec
+#     fast: true
+#     no-config: true
+#     presets: [bugs, performance]
+#     skip-dirs:
+#       - src/external_libs/
+#     skip-dirs-use-default: false
+#     skip-files:
+#       - ".*\\.my\\.go$"
+#       - lib/bad.go
+#     tests: false
+#     uniq-by-line: false
+
+#   # Goodcheck example. See https://help.sider.review/tools/others/goodcheck
+#   goodcheck:
+#     root_dir: project/
+#     config: config/goodcheck.yml
+#     target:
+#       - src/
+#       - test/
+
+#   # JSHint example. See https://help.sider.review/tools/javascript/jshint
+#   jshint:
+#     root_dir: project/
+#     target: src/
+#     config: config/.jshintrc.json
+
+#   # Misspell example. See https://help.sider.review/tools/others/misspell
+#   misspell:
+#     root_dir: project/
+#     target: [src/, test/]
+#     exclude: ["**/*.min.*"]
+#     locale: UK
+#     ignore: [center, behavior]
+
+#   # Phinder example. See https://help.sider.review/tools/php/phinder
+#   phinder:
+#     root_dir: project/
+#     rule: rules/
+#     target: src/
+
+#   # Querly example. See https://help.sider.review/tools/ruby/querly
+#   querly:
+#     root_dir: project/
+#     dependencies:
+#       - { name: "querly", version: "1.2.0" }
+#     config: config/querly.yml
+
+#   # ShellCheck example. See https://help.sider.review/tools/shellscript/shellcheck
+#   shellcheck:
+#     root_dir: project/
+#     target:
+#       - "**/*.{sh,bash}"
+#       - shebang: true
+#     include: [SC2104, SC2105]
+#     exclude: [SC1000, SC1118]
+#     enable: all
+#     shell: bash
+#     severity: error
+#     norc: true
+
+#   # stylelint example. See https://help.sider.review/tools/css/stylelint
+#   stylelint:
+#     root_dir: project/
+#     dependencies:
+#       - my-stylelint-plugin@2
+#     npm_install: false
+#     config: config/.stylelintrc.yml
+#     syntax: scss
+#     ignore-path: config/.stylelintignore
+#     ignore-disables: true
+#     report-needless-disables: true
+#     quiet: true
+#     target: ["app/**/*.scss"]
+
+#   # TyScan example. See https://help.sider.review/tools/javascript/tyscan
+#   tyscan:
+#     root_dir: project/
+#     dependencies:
+#       - my-tyscan-plugin@2
+#     npm_install: false
+#     config: config/tyscan.yml
+#     tsconfig: src/tsconfig.json
+#     target: [src/]
+
+# Ignore specific files. Example:
+# ignore:
+#   - "*.pdf"
+#   - "*.mp4"
+#   - "*.min.*"
+#   - "images/**"
+
+# Exclude specific branches. Example:
+# branches:
+#   exclude:
+#     - master
+#     - development
+#     - /^release-.*$/
