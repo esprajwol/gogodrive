@@ -186,6 +186,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("Unable to retrieve files: %v", err)
 	}
+
 	fmt.Println("Files:")
 	if len(r.Files) == 0 {
 		fmt.Println("No files found.")
@@ -194,32 +195,32 @@ func main() {
 			fmt.Printf("%s (%s)\n", i.Name, i.Id)
 		}
 	}
-/*
-	// Step 1. Open the file
-	f, err := os.Open("go.mod")
+	/*
+		// Step 1. Open the file
+		f, err := os.Open("go.mod")
 
-	if err != nil {
-		panic(fmt.Sprintf("cannot open file: %v", err))
-	}
+		if err != nil {
+			panic(fmt.Sprintf("cannot open file: %v", err))
+		}
 
-	defer f.Close()
+		defer f.Close()
 
-	// Step 2. Get the Google Drive service
-	service, err := getService()
+		// Step 2. Get the Google Drive service
+		service, err := getService()
 
-	// Step 3. Create the directory
-	dir, err := createDir(service, "My Folder", "root")
+		// Step 3. Create the directory
+		dir, err := createDir(service, "My Folder", "root")
 
-	if err != nil {
-		panic(fmt.Sprintf("Could not create dir: %v\n", err))
-	}
+		if err != nil {
+			panic(fmt.Sprintf("Could not create dir: %v\n", err))
+		}
 
-	// Step 4. Create the file and upload its content
-	file, err := createFile(service, "uploaded-image.png", "image/png", f, dir.Id)
+		// Step 4. Create the file and upload its content
+		file, err := createFile(service, "uploaded-image.png", "image/png", f, dir.Id)
 
-	if err != nil {
-		panic(fmt.Sprintf("Could not create file: %v\n", err))
-	}
+		if err != nil {
+			panic(fmt.Sprintf("Could not create file: %v\n", err))
+		}
 
-	fmt.Printf("File '%s' successfully uploaded in '%s' directory", file.Name,  dir.Name)*/
+		fmt.Printf("File '%s' successfully uploaded in '%s' directory", file.Name,  dir.Name)*/
 }
